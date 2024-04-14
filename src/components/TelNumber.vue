@@ -5,9 +5,7 @@
       src="/images/icon/home-icon/icon_phone.png"
       alt=""
     />
-    <span class="text-lg font-pingfang-r text-white font-semibold"
-      >400-180-9969</span
-    >
+    <span class="text-lg font-pingfang-r text-white font-semibold"> </span>
   </div>
 </template>
 
@@ -19,4 +17,3 @@
   }
 }
 </style>
-
