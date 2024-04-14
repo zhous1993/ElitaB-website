@@ -32,6 +32,7 @@
         class="menu text-center pointer text-lg mx-4"
         :class="{
           active: validateActive(menu.link),
+          whiteActive: scrollTop == 0,
           'text-white': scrollTop == 0,
         }"
         @click="handleClick(menu)"
@@ -126,7 +127,7 @@ onBeforeUnmount(() => {
       line-height: 5.25rem;
       position: relative;
       &.active {
-        color: white !important;
+        color: $theme-color;
         &.whiteActive {
           color: white !important;
           &::after {
@@ -142,11 +143,11 @@ onBeforeUnmount(() => {
           width: 100%;
           height: 5px;
           content: "";
-          background: white;
+          background: $theme-color;
         }
       }
       &:hover {
-        color: white;
+        color: $theme-color;
         position: relative;
         z-index: 100;
 

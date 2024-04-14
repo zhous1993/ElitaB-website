@@ -1,8 +1,8 @@
 <!--
  * @Author: DESKTOP-ER2OAAD\zs_lq zhous@ai-cloud.edu
  * @Date: 2023-02-23 16:43:04
- * @LastEditors: DESKTOP-ER2OAAD\zs_lq zhous@ai-cloud.edu
- * @LastEditTime: 2023-02-23 17:03:53
+ * @LastEditors: DESKTOP-16EDV1I\zs_lq zhous0310@gmail.com
+ * @LastEditTime: 2024-04-14 19:08:03
  * @FilePath: \website-edu\src\components\common\Title2.vue
  *
 -->
@@ -25,7 +25,7 @@
 }
 .bottom-block {
   background: $theme-color;
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 0.63rem;
+  height: 1.25rem;
 }
 </style>

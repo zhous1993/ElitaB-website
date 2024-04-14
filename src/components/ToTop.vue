@@ -21,13 +21,13 @@ const handleScroll = () => {
 .nav-btn {
   width: 4.5rem;
   height: 4.5rem;
-  background-color: rgba(195, 20, 31, 1);
+  background-color: $theme-color;
   border-radius: 50%;
   cursor: pointer;
   animation: scroll-icon 1.2s infinite alternate
     cubic-bezier(0.65, 0.05, 0.36, 1);
   &:hover {
-    background-color: rgba(245, 25, 39, 1);
+    background-color: $theme-color;
   }
 }
 @keyframes scroll-icon {

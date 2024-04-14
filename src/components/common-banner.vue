@@ -1,8 +1,8 @@
 <!--
  * @Author: DESKTOP-ER2OAAD\zs_lq zhous@ai-cloud.edu
  * @Date: 2022-04-02 17:01:09
- * @LastEditors: DESKTOP-ER2OAAD\zs_lq zhous@ai-cloud.edu
- * @LastEditTime: 2023-03-07 14:00:43
+ * @LastEditors: DESKTOP-16EDV1I\zs_lq zhous0310@gmail.com
+ * @LastEditTime: 2024-04-14 21:16:32
  * @FilePath: \website-edu\src\components\common-banner.vue
  *
 -->
@@ -14,16 +14,6 @@
     <div class="w-full" :style="{ backgroundImage: `url('${img}')` }">
       <img class="banner-bg" :src="img" alt="" />
     </div>
-    <div class="right-side">
-      <div class="addr">Aicloud-edu</div>
-      <div class="mt-11.5rem">
-        <img
-          class="h-7.4rem"
-          :src="cdn + '/icon/home-icon/ico-right-arrow-down.svg'"
-          alt=""
-        />
-      </div>
-    </div>
 
     <div class="absolute h-full flex flex-col items-center justify-center">
       <div class="relative">
@@ -31,6 +21,7 @@
           class="w-4rem animate-animated animate-fade-in-up"
           :src="cdn + icon"
           alt=""
+          v-if="icon"
         />
       </div>
       <div
@@ -67,7 +58,7 @@ const props = defineProps({
   title: { type: String, default: "" },
   img: { type: String, default: "" },
   subTitle: { type: String, default: "哈哈哈哈" },
-  icon: { type: String, default: "/icon/other-icon/ico-college.svg" },
+  icon: { type: String, default: "" },
 });
 const { title } = toRefs(props);
 const handleScroll = () => {
@@ -126,7 +117,7 @@ const handleScroll = () => {
   .nav-btn {
     width: 4.5rem;
     height: 4.5rem;
-    background-color: rgba(195, 20, 31, 1);
+    background-color: $theme-color;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;

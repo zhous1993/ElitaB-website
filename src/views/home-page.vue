@@ -1,8 +1,8 @@
 <!--
  * @Author: DESKTOP-ER2OAAD\zs_lq zhous@ai-cloud.edu
  * @Date: 2022-04-02 17:01:10
- * @LastEditors: 周松 zhous@ai-cloud.edu
- * @LastEditTime: 2024-04-12 15:50:49
+ * @LastEditors: DESKTOP-16EDV1I\zs_lq zhous0310@gmail.com
+ * @LastEditTime: 2024-04-14 18:28:28
  * @FilePath: \website-edu\src\views\home-page.vue
  *
 -->
@@ -87,18 +87,13 @@
           @click="handleNextOrPrev"
         >
           <img
-            :src="
-              cdn +
-              (current.activeIndex == 2
-                ? '/icon/home-icon/left-arrow-down-dark.svg'
-                : '/icon/home-icon/left-arrow-down.svg')
-            "
+            :src="cdn + '/icon/home-icon/left-arrow-down.svg'"
             alt=""
             class="transition-all duration-500"
-            :class="{ 'transform rotate-180': current.activeIndex == 3 }"
+            :class="{ 'transform rotate-180': current.activeIndex == 2 }"
           />
         </div>
-        <div
+        <!-- <div
           class="nav-item mt-6 rounded-1/2 flex justify-center items-center relative"
         >
           <img src="/icon/home-icon/left-wechat.svg" alt="" />
@@ -107,7 +102,7 @@
             :src="cdn + '/home/wechat-qrcode.png'"
             alt=""
           />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -153,7 +148,7 @@ const onSwiper = (i: any) => {
 };
 
 const handleNextOrPrev = () => {
-  if (current.activeIndex < 3) {
+  if (current.activeIndex < 2) {
     current.swiper.slideNext();
   } else {
     current.swiper.slideTo(0);
@@ -176,10 +171,10 @@ const handleSlide = (index: number) => {
     .nav-item {
       width: 4rem;
       height: 4rem;
-      background: rgba(195, 20, 31, 1);
+      background: rgba(0, 0, 0, 1);
       cursor: pointer;
       &:hover {
-        background-color: rgba(245, 25, 39, 1);
+        background-color: rgba(0, 0, 0, 0.5);
       }
       &:nth-child(2) {
         background: rgba(51, 51, 51, 0.6);
@@ -258,7 +253,6 @@ const handleSlide = (index: number) => {
   &.light {
     .left-side-nav {
       .nav-item {
-        background: white;
         &:nth-child(2) {
           background: rgba(51, 51, 51, 0.6);
         }

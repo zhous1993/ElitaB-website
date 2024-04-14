@@ -23,41 +23,24 @@ const routes: Array<RouteRecordRaw> = [
     component: DefaultLayout,
     children: [
       {
-        path: "career",
-        meta: { title: "就业帮" },
-        component: () => import("@/views/career-page.vue"),
+        path: "joint-training",
+        meta: { title: "联合培养项目" },
+        component: () => import("@/views/joint-training.vue"),
       },
       {
-        path: "industry-college",
-        name: "IndustryCollege",
-        meta: { title: "职业本科" },
-        component: () => import("@/views/profession/bve.vue"),
+        path: "Sino-foreign",
+        meta: { title: "中外合作办学项目" },
+        component: () => import("@/views/sino-foreign.vue"),
       },
       {
-        path: "VE",
-        name: "VE",
-        meta: { title: "职教高考" },
-        component: () => import("@/views/profession/top-up.vue"),
+        path: "high-school",
+        meta: { title: "国际高中" },
+        component: () => import("@/views/high-school.vue"),
       },
       {
-        path: "edu",
-        name: "EduPage",
-        meta: { title: "教育数字化" },
-        component: () => import("@/views/digital-edu/index.vue"),
-        children: [
-          {
-            path: "/edu/VE",
-            name: "VE",
-            meta: { title: "职教高考" },
-            component: () => import("@/views/profession/top-up.vue"),
-          },
-          {
-            path: "/edu/open-edu",
-            name: "open-edu",
-            meta: { title: "继续教育" },
-            component: () => import("@/views/education/open-edu.vue"),
-          },
-        ],
+        path: "Micro-study-abroad",
+        meta: { title: "微留学" },
+        component: () => import("@/views/micro-study-abroad.vue"),
       },
 
       {

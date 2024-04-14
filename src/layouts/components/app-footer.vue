@@ -1,8 +1,8 @@
 <!--
  * @Author: DESKTOP-ER2OAAD\zs_lq zhous@ai-cloud.edu
  * @Date: 2022-04-02 17:01:09
- * @LastEditors: DESKTOP-ER2OAAD\zs_lq zhous@ai-cloud.edu
- * @LastEditTime: 2023-11-21 17:47:05
+ * @LastEditors: DESKTOP-16EDV1I\zs_lq zhous0310@gmail.com
+ * @LastEditTime: 2024-04-14 18:44:16
  * @FilePath: \website-edu\src\layouts\components\app-footer.vue
  *
 -->
@@ -11,41 +11,46 @@
     <div class="footer-content">
       <div class="flex justify-between h-16.4rem pt-10">
         <div>
-          <img class="w-[10rem]" :src="cdn + '/logo-white.png'" alt="" />
+          <img class="w-[7.5rem]" :src="cdn + '/logo-white.png'" alt="" />
           <div class="flex items-start mt-8">
             <img
               class="mr-2 mt-1 w-1rem"
-              :src="cdn + '/icon/home-icon/ico-location.svg'"
+              :src="cdn + '/icon/home-icon/ico-location.png'"
               alt=""
             />
-            <div class="leading-5">
-              深圳市南山区香港中文大学深圳研究院<br />李伟波楼308、309、814
-            </div>
+            <div class="leading-5">北京亦庄开发区国锐广场B座912</div>
           </div>
           <div class="flex items-start mt-4">
             <img
               class="mr-2 mt-1 w-1rem"
-              :src="cdn + '/icon/home-icon/ico-tel.svg'"
+              :src="cdn + '/icon/home-icon/ico-phone.png'"
               alt=""
             />
-            <div class="leading-6">400-180-9969</div>
+            <div class="leading-6">孙老师 13911639807</div>
+          </div>
+          <div class="flex items-start mt-4">
+            <img
+              class="mr-2 mt-1 w-1rem"
+              :src="cdn + '/icon/home-icon/ico-mail.png'"
+              alt=""
+            />
+            <div class="leading-6">info@elitab.top</div>
           </div>
         </div>
-        <div class="flex-1 flex justify-between gap-16 ml-20">
-          <div v-for="item in extraLinks" :key="item.title">
-            <div class="text-white font-semibold text-xl mb-4">
-              {{ item.title }}
-            </div>
-            <div v-for="child in item.children" :key="child.name" class="my-1">
-              <a :href="child.link">
-                {{ child.name }}
-              </a>
-            </div>
-            <div
-              v-if="item.title == '平台产品'"
-              class="relative flex items-center hover:text-white mini-program link"
-            >
-              <!-- <img
+        <div v-for="item in extraLinks" :key="item.title">
+          <div class="text-white font-semibold text-xl mb-4">
+            {{ item.title }}
+          </div>
+          <div v-for="child in item.children" :key="child.name" class="my-1">
+            <a :href="child.link">
+              {{ child.name }}
+            </a>
+          </div>
+          <div
+            v-if="item.title == '平台产品'"
+            class="relative flex items-center hover:text-white mini-program link"
+          >
+            <!-- <img
                 class="mr-2 light"
                 :src="cdn + '/icon/home-icon/ico-miniprogram.svg'"
                 alt=""
@@ -55,138 +60,69 @@
                 :src="cdn + '/icon/home-icon/ico-miniprogram-dark.svg'"
                 alt=""
               /> -->
-              <span style="line-height: 1.13rem"
-                >中汇中职学业水平备考<br />微信小程序</span
-              >
-              <img
-                class="absolute qrcode animate-animated animate-fade-in-up"
-                :src="cdn + '/home/mini-program.png'"
-                alt=""
-              />
-            </div>
-          </div>
-          <div>
-            <div class="text-white font-semibold text-xl mb-4">友情链接</div>
-            <div class="my-1 flex items-center hover:text-white link">
-              <!-- <img
-                class="mr-2 light"
-                :src="cdn + '/icon/home-icon/ico-link.svg'"
-                alt=""
-              />
-              <img
-                class="mr-2 dark"
-                :src="cdn + '/icon/home-icon/ico-link-dark.svg'"
-                alt=""
-              /> -->
-              <span>
-                <a href="http://www.huashangedu.com/" target="_blank">
-                  华商教育集团
-                </a>
-              </span>
-            </div>
-            <div class="my-1 flex items-center hover:text-white link">
-              <!-- <img
-                class="mr-2 light"
-                :src="cdn + '/icon/home-icon/ico-link.svg'"
-                alt=""
-              />
-              <img
-                class="mr-2 dark"
-                :src="cdn + '/icon/home-icon/ico-link-dark.svg'"
-                alt=""
-              /> -->
-              <span>
-                <a href="https://zj.aicloud-edu.com" target="_blank">
-                  中汇职教高考网
-                </a>
-              </span>
-            </div>
-
-            <!-- <div
-              class="relative flex items-center mt-4 hover:text-white mini-program link"
+            <span style="line-height: 1.13rem"
+              >中汇中职学业水平备考<br />微信小程序</span
             >
-              <img
-                class="mr-2 light"
-                :src="cdn + '/icon/home-icon/ico-miniprogram.svg'"
-                alt=""
-              />
-              <img
-                class="mr-2 dark"
-                :src="cdn + '/icon/home-icon/ico-miniprogram-dark.svg'"
-                alt=""
-              />
-              <span>中汇中职学业水平备考微信小程序</span>
-              <img
-                class="absolute qrcode animate-animated animate-fade-in-up"
-                :src="cdn + '/home/mini-program.png'"
-                alt=""
-              />
-            </div> -->
-          </div>
-          <div>
-            <div class="text-white font-semibold text-xl mb-4">关于我们</div>
-            <div class="my-1 flex items-center hover:text-white link">
-              <!-- <img
-                class="mr-2 light"
-                :src="cdn + '/icon/home-icon/ico-link.svg'"
-                alt=""
-              />
-              <img
-                class="mr-2 dark"
-                :src="cdn + '/icon/home-icon/ico-link-dark.svg'"
-                alt=""
-              /> -->
-              <span>
-                <a href="/about"> 企业介绍 </a>
-              </span>
-            </div>
-            <div class="my-1 flex items-center hover:text-white link">
-              <!-- <img
-                class="mr-2 light"
-                :src="cdn + '/icon/home-icon/ico-link.svg'"
-                alt=""
-              />
-              <img
-                class="mr-2 dark"
-                :src="cdn + '/icon/home-icon/ico-link-dark.svg'"
-                alt=""
-              /> -->
-              <span>
-                <a href="/about"> 联系我们 </a>
-              </span>
-            </div>
-
-            <!-- <div
-              class="relative flex items-center mt-4 hover:text-white mini-program link"
-            >
-              <img
-                class="mr-2 light"
-                :src="cdn + '/icon/home-icon/ico-miniprogram.svg'"
-                alt=""
-              />
-              <img
-                class="mr-2 dark"
-                :src="cdn + '/icon/home-icon/ico-miniprogram-dark.svg'"
-                alt=""
-              />
-              <span>中汇中职学业水平备考微信小程序</span>
-              <img
-                class="absolute qrcode animate-animated animate-fade-in-up"
-                :src="cdn + '/home/mini-program.png'"
-                alt=""
-              />
-            </div> -->
-          </div>
-          <div class="flex flex-col items-center">
             <img
-              class="w-6.25rem"
-              :src="cdn + '/home/wechat-qrcode.png'"
+              class="absolute qrcode animate-animated animate-fade-in-up"
+              :src="cdn + '/home/mini-program.png'"
               alt=""
             />
-            <div class="text-center mt-4 text-white">
-              励英教育<br />微信公众号
-            </div>
           </div>
+        </div>
+        <div>
+          <div class="text-white font-semibold text-xl mb-4">关于我们</div>
+          <div class="my-1 flex items-center hover:text-white link">
+            <!-- <img
+                class="mr-2 light"
+                :src="cdn + '/icon/home-icon/ico-link.svg'"
+                alt=""
+              />
+              <img
+                class="mr-2 dark"
+                :src="cdn + '/icon/home-icon/ico-link-dark.svg'"
+                alt=""
+              /> -->
+            <span>
+              <a href="/about"> 企业介绍 </a>
+            </span>
+          </div>
+          <div class="my-1 flex items-center hover:text-white link">
+            <!-- <img
+                class="mr-2 light"
+                :src="cdn + '/icon/home-icon/ico-link.svg'"
+                alt=""
+              />
+              <img
+                class="mr-2 dark"
+                :src="cdn + '/icon/home-icon/ico-link-dark.svg'"
+                alt=""
+              /> -->
+            <span>
+              <a href="/about"> 联系我们 </a>
+            </span>
+          </div>
+
+          <!-- <div
+              class="relative flex items-center mt-4 hover:text-white mini-program link"
+            >
+              <img
+                class="mr-2 light"
+                :src="cdn + '/icon/home-icon/ico-miniprogram.svg'"
+                alt=""
+              />
+              <img
+                class="mr-2 dark"
+                :src="cdn + '/icon/home-icon/ico-miniprogram-dark.svg'"
+                alt=""
+              />
+              <span>中汇中职学业水平备考微信小程序</span>
+              <img
+                class="absolute qrcode animate-animated animate-fade-in-up"
+                :src="cdn + '/home/mini-program.png'"
+                alt=""
+              />
+            </div> -->
         </div>
       </div>
       <div class="copyright p-6 flex justify-center">
@@ -216,12 +152,12 @@ const { cdn } = config;
 const { copyright, icp, ba } = config;
 const extraLinks = [
   {
-    title: "旗下业务",
+    title: "主要业务",
     children: [
-      { name: "职教高考", link: "/edu/VE" },
-      { name: "继续教育", link: "/edu/open-edu" },
-      { name: "就业帮", link: "/career" },
-      { name: "九问", link: "https://www.jiubyte.com/" },
+      { name: "联合培养项目", link: "/joint-training" },
+      { name: "中外合作办学项目", link: "/Sino-foreign" },
+      { name: "国际高中", link: "/high-school" },
+      { name: "微留学", link: "/Micro-study-abroad" },
     ],
   },
 ];
