@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>按钮-查看详细</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-243.000000, -98.000000)" fill-rule="nonzero">
+            <g id="按钮-查看详细" transform="translate(80.000000, 78.000000)">
+                <g id="icon/更多备份" transform="translate(171.000000, 28.000000) scale(-1, 1) translate(-171.000000, -28.000000) translate(163.000000, 20.000000)">
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                    <path d="M10.4995028,14.2499933 C10.3075124,14.2499933 10.1154952,14.1769923 9.96900953,14.0305067 L4.46950678,8.53100389 C4.17650853,8.23851633 4.17650853,7.76349952 4.46950678,7.47050127 L9.96900955,1.97048784 C10.2620078,1.67748959 10.7365139,1.67748959 11.0295122,1.97048784 C11.3225104,2.26297541 11.3225104,2.73799222 11.0295122,3.03099047 L6.06050262,8.00048381 L11.0295122,12.9694933 C11.3225104,13.2624916 11.3225104,13.7369977 11.0295122,14.029996 C10.8835103,14.1769923 10.6914931,14.2499933 10.4995028,14.2499933 Z" id="路径" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

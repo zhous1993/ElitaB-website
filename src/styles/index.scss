@@ -1,0 +1,131 @@
+@import "./normalize.scss";
+@import "util";
+@import "vue-transition";
+@font-face {
+  font-family: PingFangSC-En;
+  src: url('/font/Futura.ttc');
+}
+@font-face {
+  font-family: PingFangSC-Semibold;
+  src: url('/font/PingFangSC-Mod-17.d1e2-Semibold.otf');
+}
+@font-face {
+  font-family: PingFangSC-Regular;
+  src: url('/font/PingFangSC-Mod-17.d1e2-Regular.otf');
+}
+@font-face {
+  font-family: PingFang SC;
+  src: url('/font/PingFangSC-Mod-17.d1e2-Regular.otf');
+}
+@font-face {
+
+font-family: AlibabaPuHuiTiB;
+  src: url('/font/Alibaba_PuHuiTi_2.0_55_Regular_85_Bold.ttf');
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+html,body{
+  padding: 0;
+  margin: 0;
+  background: $bg-color;
+  font-size: $fs-base;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  color: $fs-color;
+  // min-width: 1920px;
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    width: 10px;
+    // height: 10px; // 高度写不写，都不影响，因为会根据内容的长度自动计算
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc; // 滑块颜色
+    border-radius: 5px; // 滑块圆角
+}
+
+
+}
+.banner-img {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.swiper-pagination-bullet{
+  margin-bottom: 1.5rem!important;
+  white-space: nowrap!important;
+  text-align: right;
+  overflow: visible;
+  &.swiper-pagination-bullet-active{
+    .bullt-name{
+      display: block;
+    }
+  }
+  .bullt-name{
+    display: none;
+  }
+}
+
+.swiper-3d .swiper-slide-shadow{
+  background: none!important;
+}
+
+.content{
+  p{
+    font-size: 1.13rem;
+
+line-height: 2.25rem !important;
+
+color: #484D54;
+font-weight: 400;
+
+font-family: PingFangSC-Regular PingFang SC;
+  }
+
+}
+.el-textarea__inner{
+
+font-family: PingFangSC-Regular, PingFang SC!important;
+font-size: 1.13rem;
+}
+.font-pingfang-r{
+font-family: PingFangSC-Regular, PingFang SC;
+}
+.font-pingfang-b{
+     font-family: PingFangSC-Semibold, PingFang SC;
+  }
+.textarea {
+  .el-textarea__inner {
+    height: 10rem;
+    font-size: 1.13rem;
+  }
+}
+.apply-textarea{
+  .el-textarea__inner {
+    height: 5.88rem;
+    font-size: 1.13rem;
+  }
+}
+.el-input__inner{
+  font-family: PingFangSC-Regular, PingFang SC!important;
+font-size: 1.13rem!important;
+}
+.el-input--large  .el-input__inner{
+  height: 3rem!important;
+}
+
+@screen 3xl {
+  .text-56px{
+    font-size: 56px!important;
+  }
+  .el-textarea__inner{
+    font-size: 20px!important;
+  }
+  .el-input__inner{
+    font-family: PingFangSC-Regular, PingFang SC!important;
+  font-size: 20px!important;
+  }
+}
