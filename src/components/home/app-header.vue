@@ -38,7 +38,6 @@
       >
         <span class="">{{ menu.title }}</span>
       </div>
-      <TelNumber class="ml-4" />
     </div>
   </div>
 </template>

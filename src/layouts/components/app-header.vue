@@ -38,7 +38,7 @@
         @click="handleClick(menu)"
       >
         <span class="">{{ menu.title }}</span>
-        <template v-if="menu.children">
+        <!-- <template v-if="menu.children">
           <div class="menu-child text-base">
             <div
               v-for="item in menu.children"
@@ -49,9 +49,8 @@
               {{ item.title }}
             </div>
           </div>
-        </template>
+        </template> -->
       </div>
-      <TelNumber class="ml-4" />
     </div>
   </div>
 </template>

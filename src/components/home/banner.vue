@@ -2,7 +2,7 @@
  * @Author: DESKTOP-ER2OAAD\zs_lq zhous@ai-cloud.edu
  * @Date: 2022-04-02 17:01:09
  * @LastEditors: 周松 zhous@ai-cloud.edu
- * @LastEditTime: 2024-04-12 14:21:40
+ * @LastEditTime: 2024-04-19 16:04:34
  * @FilePath: \website-edu\src\components\home\banner.vue
  *
 -->
@@ -16,7 +16,9 @@
         <div class="desc text-[5rem]">连接全球教育资源</div>
         <div class="w-[11.25rem] h-[0.63rem] bg-white my-[1.88rem]"></div>
       </div>
-      <div class="leading-[3.75rem] text-[rgba(255,255,255,0.6)]">
+      <div
+        class="leading-[3.75rem] text-[rgba(255,255,255,0.6)] text-[2.25rem]"
+      >
         <div>为合作伙伴提供专业咨询与服务</div>
         <div>为学习者提供成长与深造机会</div>
       </div>

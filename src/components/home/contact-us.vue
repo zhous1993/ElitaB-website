@@ -2,7 +2,7 @@
  * @Author: DESKTOP-ER2OAAD\zs_lq zhous@ai-cloud.edu
  * @Date: 2022-04-02 17:01:09
  * @LastEditors: 周松 zhous@ai-cloud.edu
- * @LastEditTime: 2024-04-12 16:26:17
+ * @LastEditTime: 2024-04-19 16:17:33
  * @FilePath: \website-edu\src\components\home\contact-us.vue
  *
 -->
@@ -136,8 +136,8 @@ const handleSubmit = () => {
   height: 100%;
   background: url("https://pubcdn.aicloud-edu.com/pub/site/home/contact-bg.png")
     no-repeat;
-  background-image: url(https://pubcdn.aicloud-edu.com/pub/site/home/contact-bg.png);
-  background-size: 100% 100%;
+  background-image: url("/images/home/contact-bg.png");
+  background-size: cover;
   background-attachment: fixed;
   .wrapper-bg {
     position: fixed;
